@@ -1,3 +1,50 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Punk";
+	src: url("./assets/fonts/mustasurma/Mustasurma.ttf");
+}
+
+html,
+body {
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body {
+	max-width: 2000px;
+}
 * {
-	border: 2px red solid;
+	/* border: 2px red solid; */
+	font-family: "Montserrat";
+	color: white;
+	background-color: black;
+}
+
+/* Header Styles */
+.logo {
+	float: left;
+}
+h1 {
+	font-family: "Punk";
+	font-size: 64px;
+	font-weight: 500;
+}
+
+.header-icon {
+	width: 30px;
+}
+
+.linkedin {
+	width: 37px;
 }
