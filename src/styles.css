@@ -22,7 +22,7 @@ html {
 }
 
 body {
-	max-width: 2000px;
+	max-width: 2500px;
 }
 * {
 	/* border: 2px red solid; */
@@ -32,9 +32,17 @@ body {
 }
 
 /* Header Styles */
+
+.header-background {
+}
 .logo {
 	float: left;
 }
+
+.border {
+	border: 5px white solid;
+}
+
 h1 {
 	font-family: "Punk";
 	font-size: 64px;
@@ -47,4 +55,17 @@ h1 {
 
 .linkedin {
 	width: 37px;
+}
+
+/* body styles */
+
+main {
+	display: flex;
+	/* max-width: 2000px; */
+	flex-wrap: wrap;
+}
+
+.project-img {
+	width: 400px;
+	object-fit: fill;
 }
