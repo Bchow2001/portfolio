@@ -10,7 +10,7 @@
 
 html,
 body {
-	height: 100vh;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -22,10 +22,9 @@ html {
 }
 
 body {
-	max-width: 2500px;
-}
-* {
-	/* border: 2px red solid; */
+	max-width: 2000px;
+	display: flex;
+	flex-direction: column;
 	font-family: "Montserrat";
 	color: white;
 	background-color: black;
@@ -33,20 +32,27 @@ body {
 
 /* Header Styles */
 
-.header-background {
-}
-.logo {
-	float: left;
+header {
+	display: flex;
+	padding: 20px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
-.border {
-	border: 5px white solid;
+picture {
+	transition: all 0.3s ease-in-out;
 }
 
 h1 {
 	font-family: "Punk";
-	font-size: 64px;
+	font-size: 72px;
 	font-weight: 500;
+	transition: font-size 0.3s ease-in-out;
+}
+
+.about-wrapper {
+	max-width: 1500px;
 }
 
 .header-icon {
@@ -58,14 +64,102 @@ h1 {
 }
 
 /* body styles */
-
 main {
 	display: flex;
-	/* max-width: 2000px; */
+	padding: 20px;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background-color: purple;
+}
+
+h3 {
+	font-family: "Punk";
+	font-weight: 500;
+	font-size: 48px;
+}
+
+.article-wrapper {
+	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 30px;
+}
+
+article {
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
 .project-img {
-	width: 400px;
+	max-width: 400px;
 	object-fit: fill;
+}
+
+.project-title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-icon {
+	width: 25px;
+}
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+	h3 {
+		font-size: 34px;
+	}
+	.hero-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	* {
+		text-align: center;
+	}
+	.project-img,
+	article {
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 360px) {
+	h1 {
+		font-size: 34px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	.contact-header {
+		font-size: 27px;
+	}
+	.project-img,
+	article {
+		max-width: 250px;
+	}
+}
+
+.move {
+	animation: 2s jump infinite alternate;
+}
+
+@keyframes jump {
+	0% {
+		transform: translate(0);
+		color: red;
+	}
+	50% {
+		transform: translate(10px, 2px);
+	}
+	100% {
+		transform: translate(0);
+		color: blue;
+	}
 }

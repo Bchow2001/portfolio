@@ -10,7 +10,7 @@
 	<body>
 		<header>
 			<div class="header-background"></div>
-			<div>
+			<div class="hero-wrapper">
 				<picture>
 					<source
 						media="(min-width: 1000px)"
@@ -20,16 +20,25 @@
 						media="(min-width: 500px)"
 						srcset="./assets/images/logo_400.png"
 					/>
+					<source
+						media="(min-width:400px)"
+						srcset="./assets/images/logo_300.png"
+					/>
 					<img
 						class="logo"
-						src="./assets/images/logo_300.png"
+						src="./assets/images/logo_200.png"
 						alt="Company Logo of a Web"
 					/>
 				</picture>
-				<h1>@Punk_Web Bryan</h1>
 			</div>
 
-			<div>
+			<div class="about-wrapper">
+				<h1 class="title">
+					<span>@</span><span>P</span><span>U</span><span>N</span
+					><span>K</span><span>_</span><span>W</span><span>E</span
+					><span>B</span><span> </span><span>B</span><span>R</span
+					><span>Y</span><span>A</span><span>N</span>
+				</h1>
 				<h2>About Me</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -69,254 +78,261 @@
 				</div>
 			</div>
 		</header>
-		<h3>My Creations</h3>
+
 		<main>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/weather.png"
-					alt="Weather forecast project screenshot"
-				/>
-				<div>
-					<h4>Weather Forecast</h4>
-					<a
-						href="https://github.com/Bchow2001/weather-forecast"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
-					<a
-						href="https://bchow2001.github.io/weather-forecast/"
-						target="_blank"
-						>Page</a
-					>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/admin.png"
-					alt="Admin dashboard screenshot"
-				/>
-				<div>
-					<h4>Admin Dashboard</h4>
-					<a
-						href="https://github.com/Bchow2001/admindash"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
+			<h3>MY_CREATIONS</h3>
+			<div class="article-wrapper">
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/weather.png"
+						alt="Weather forecast project screenshot"
+					/>
+					<div>
+						<div class="project-title">
+							<h4>Weather Forecast</h4>
+							<div>
+								<a
+									href="https://github.com/Bchow2001/weather-forecast"
+									target="_blank"
+									><img
+										class="main-icon"
+										src="./assets/images/github-mark-white.svg"
+										alt="GitHub link to project (opens in new tab)"
+								/></a>
+								<a
+									href="https://bchow2001.github.io/weather-forecast/"
+									target="_blank"
+									>Page</a
+								>
+							</div>
+						</div>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/admin.png"
+						alt="Admin dashboard screenshot"
+					/>
+					<div>
+						<h4>Admin Dashboard</h4>
+						<a
+							href="https://github.com/Bchow2001/admindash"
+							target="_blank"
+							><img
+								class="main-icon"
+								src="./assets/images/github-mark-white.svg"
+								alt="GitHub link to project (opens in new tab)"
+						/></a>
 
-					<a href="">Page</a>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/sign.png"
-					alt="Sign-up form screenshot"
-				/>
-				<div>
-					<h4>Sign up form</h4>
-					<a
-						href="https://github.com/Bchow2001/Signup-Form"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
+						<a href="">Page</a>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/sign.png"
+						alt="Sign-up form screenshot"
+					/>
+					<div>
+						<h4>Sign up form</h4>
+						<a
+							href="https://github.com/Bchow2001/Signup-Form"
+							target="_blank"
+							><img
+								class="main-icon"
+								src="./assets/images/github-mark-white.svg"
+								alt="GitHub link to project (opens in new tab)"
+						/></a>
 
-					<a href="">Page</a>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/library.png"
-					alt="Library screenshot"
-				/>
-				<div>
-					<h4>Library</h4>
-					<a
-						href="https://github.com/Bchow2001/library"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
+						<a href="">Page</a>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/library.png"
+						alt="Library screenshot"
+					/>
+					<div>
+						<h4>Library</h4>
+						<a
+							href="https://github.com/Bchow2001/library"
+							target="_blank"
+							><img
+								class="main-icon"
+								src="./assets/images/github-mark-white.svg"
+								alt="GitHub link to project (opens in new tab)"
+						/></a>
 
-					<a href="">Page</a>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/restaurant.png"
-					alt="Restaurant screenshot"
-				/>
-				<div>
-					<h4>Restaurant</h4>
-					<a
-						href="https://github.com/Bchow2001/restaurant"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
+						<a href="">Page</a>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/restaurant.png"
+						alt="Restaurant screenshot"
+					/>
+					<div>
+						<h4>Restaurant</h4>
+						<a
+							href="https://github.com/Bchow2001/restaurant"
+							target="_blank"
+							><img
+								class="main-icon"
+								src="./assets/images/github-mark-white.svg"
+								alt="GitHub link to project (opens in new tab)"
+						/></a>
 
-					<a href="">Page</a>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/etch.png"
-					alt="Etch-a-Sketch screenshot"
-				/>
-				<div>
-					<h4>Etch-a-Sketch</h4>
-					<a
-						href="https://github.com/Bchow2001/etch-a-sketch"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
+						<a href="">Page</a>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/etch.png"
+						alt="Etch-a-Sketch screenshot"
+					/>
+					<div>
+						<h4>Etch-a-Sketch</h4>
+						<a
+							href="https://github.com/Bchow2001/etch-a-sketch"
+							target="_blank"
+							><img
+								class="main-icon"
+								src="./assets/images/github-mark-white.svg"
+								alt="GitHub link to project (opens in new tab)"
+						/></a>
 
-					<a href="">Page</a>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/calc.png"
-					alt="Calculator screenshot"
-				/>
-				<div>
-					<h4>Calculator</h4>
-					<a
-						href="https://github.com/Bchow2001/calculator"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
+						<a href="">Page</a>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/calc.png"
+						alt="Calculator screenshot"
+					/>
+					<div>
+						<h4>Calculator</h4>
+						<a
+							href="https://github.com/Bchow2001/calculator"
+							target="_blank"
+							><img
+								class="main-icon"
+								src="./assets/images/github-mark-white.svg"
+								alt="GitHub link to project (opens in new tab)"
+						/></a>
 
-					<a href="">Page</a>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/recipes.png"
-					alt="Recipes screenshot"
-				/>
-				<div>
-					<h4>Recipes</h4>
-					<a
-						href="https://github.com/Bchow2001/odin-recipes"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
+						<a href="">Page</a>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/recipes.png"
+						alt="Recipes screenshot"
+					/>
+					<div>
+						<h4>Recipes</h4>
+						<a
+							href="https://github.com/Bchow2001/odin-recipes"
+							target="_blank"
+							><img
+								class="main-icon"
+								src="./assets/images/github-mark-white.svg"
+								alt="GitHub link to project (opens in new tab)"
+						/></a>
 
-					<a href="">Page</a>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/tic.png"
-					alt="Tic Tac Toe screenshot"
-				/>
-				<div>
-					<h4>Tic Tac Toe</h4>
-					<a
-						href="https://github.com/Bchow2001/tictactoe"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
+						<a href="">Page</a>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/tic.png"
+						alt="Tic Tac Toe screenshot"
+					/>
+					<div>
+						<h4>Tic Tac Toe</h4>
+						<a
+							href="https://github.com/Bchow2001/tictactoe"
+							target="_blank"
+							><img
+								class="main-icon"
+								src="./assets/images/github-mark-white.svg"
+								alt="GitHub link to project (opens in new tab)"
+						/></a>
 
-					<a href="">Page</a>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
-			<article>
-				<img
-					class="project-img"
-					src="./assets/images/projects/knights.png"
-					alt="Knights Travail screenshot"
-				/>
-				<div>
-					<h4>Knights Travail</h4>
-					<a
-						href="https://github.com/Bchow2001/knights-travails"
-						target="_blank"
-						><img
-							class="main-icon"
-							src="./assets/images/github-mark-white.svg"
-							alt="GitHub link to project (opens in new tab)"
-					/></a>
+						<a href="">Page</a>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+				<article>
+					<img
+						class="project-img"
+						src="./assets/images/projects/knights.png"
+						alt="Knights Travail screenshot"
+					/>
+					<div>
+						<h4>Knights Travail</h4>
+						<a
+							href="https://github.com/Bchow2001/knights-travails"
+							target="_blank"
+							><img
+								class="main-icon"
+								src="./assets/images/github-mark-white.svg"
+								alt="GitHub link to project (opens in new tab)"
+						/></a>
 
-					<a href="">Page</a>
-					<p>
-						Short description of the project. Just a couple
-						sentences will do.
-					</p>
-				</div>
-			</article>
+						<a href="">Page</a>
+						<p>
+							Short description of the project. Just a couple
+							sentences will do.
+						</p>
+					</div>
+				</article>
+			</div>
 		</main>
 		<footer>
-			<h3>Contact Me :)</h3>
+			<h3 class="contact-header">Contact_Me :)</h3>
 			<p>Please contact me if we can make something amazing together</p>
 			<p>1234 Random Road</p>
 			<p>Random Town, Silicon Valley 12345</p>
