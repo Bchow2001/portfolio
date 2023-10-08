@@ -2,7 +2,7 @@ import "./styles.css";
 
 const header = document.querySelector(".title");
 
-header.addEventListener("mouseover", () => {
+const moving = () => {
 	let { children } = header;
 	children = [...children];
 	children.forEach((item) => {
@@ -10,4 +10,8 @@ header.addEventListener("mouseover", () => {
 			item.classList.toggle("move");
 		}
 	});
-});
+};
+
+header.addEventListener("mouseover", moving);
+
+header.addEventListener("mouseout", moving);
