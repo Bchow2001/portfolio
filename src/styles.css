@@ -44,6 +44,28 @@ picture {
 	transition: all 0.3s ease-in-out;
 }
 
+.title-wrapper {
+	display: grid;
+}
+
+.title,
+.main-title {
+	grid-area: 1/1;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.one {
+	transform: translate(50px, 50px);
+}
+
+.two {
+	transform: translate(-50px, -50px);
+	animation: 0.5s jump infinite alternate;
+}
+
 h1 {
 	width: fit-content;
 	font-family: "Punk";
@@ -53,8 +75,10 @@ h1 {
 }
 
 .move {
-	/* display: inline-block; */
-	animation: 0.1s jump infinite alternate;
+}
+
+span {
+	display: inline-block;
 }
 
 @keyframes jump {
@@ -130,7 +154,7 @@ article {
 
 @media (max-width: 600px) {
 	h1 {
-		font-size: 50px;
+		font-size: 47px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
