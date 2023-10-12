@@ -63,11 +63,11 @@ picture {
 
 .two {
 	transform: translate(-50px, -50px);
-	animation: 0.5s jump infinite alternate;
 }
 
 h1 {
 	width: fit-content;
+	height: fit-content;
 	font-family: "Punk";
 	font-size: 72px;
 	font-weight: 500;
@@ -75,10 +75,6 @@ h1 {
 }
 
 .move {
-}
-
-span {
-	display: inline-block;
 }
 
 @keyframes jump {
